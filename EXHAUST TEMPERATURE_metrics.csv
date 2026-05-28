@@ -1,6 +1,0 @@
-Model,MAE,RMSE,R2 Score
-ANN,0.957,1.346,0.949
-Random Forest,1.182,1.658,0.923
-Decision Tree,1.569,2.242,0.859
-SVM,1.503,2.104,0.876
-XGBoost,1.071,1.452,0.941
