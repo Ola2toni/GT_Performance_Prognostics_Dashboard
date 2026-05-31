@@ -1590,7 +1590,7 @@ elif section == "Model Training and Evaluation":
 
                 map_location=torch.device("cpu"),
 
-                weights_only=False
+                weights_only=True
             )
         )
 
@@ -2122,7 +2122,7 @@ elif section == "New Prediction":
                     torch.load(
                         f"correct_models/{target}_ANN.pth",
                         map_location=torch.device("cpu"),
-                        weights_only=False
+                        weights_only=True
                     )
 
                 )
