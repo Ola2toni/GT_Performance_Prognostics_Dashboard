@@ -1611,8 +1611,7 @@ elif section == "Model Training and Evaluation":
 
                 f"correct_models/{selected_target}_ANN.pth",
 
-                map_location=torch.device("cpu"),
-                weights_only=False
+                map_location=torch.device("cpu")
             )
         )
 
