@@ -1305,23 +1305,23 @@ elif section == "Model Training and Evaluation":
     
     st.title("Model Training and Evaluation")
 
-    import os
+    # import os
 
-    st.write(
-        "features.pkl exists:",
-        os.path.exists("correct_models/features.pkl")
-    )
+    # st.write(
+    #     "features.pkl exists:",
+    #     os.path.exists("correct_models/features.pkl")
+    # )
     
-    st.write(
-        "features.pkl size:",
-        os.path.getsize("correct_models/features.pkl")
-    )
+    # st.write(
+    #     "features.pkl size:",
+    #     os.path.getsize("correct_models/features.pkl")
+    # )
     
-    with open("correct_models/features.pkl", "rb") as f:
-        st.write(
-            "First 100 bytes:",
-            f.read(100)
-        )
+    # with open("correct_models/features.pkl", "rb") as f:
+    #     st.write(
+    #         "First 100 bytes:",
+    #         f.read(100)
+    #     )
 
     # ==========================================
     # LOAD SAVED FILES
