@@ -1584,6 +1584,22 @@ elif section == "Model Training and Evaluation":
 
         model.load_state_dict(
 
+            import os
+
+            st.write(
+               "Exists:",
+                os.path.exists(
+                      f"correct_models/{selected_target}_ANN.pth"
+              )
+             )
+
+             st.write(
+                  "Size:",
+                   os.path.getsize(
+                    f"correct_models/{selected_target}_ANN.pth"
+              )
+            )
+
             torch.load(
 
                 f"correct_models/{selected_target}_ANN.pth",
