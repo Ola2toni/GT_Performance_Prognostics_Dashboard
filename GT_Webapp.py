@@ -528,6 +528,29 @@ download_file(
     "correct_models/y_test_sfc.pkl"
 )
 
+import os
+
+st.write(
+    "EXHAUST ANN:",
+    os.path.getsize(
+        "correct_models/EXHAUST TEMPERATURE_ANN.pth"
+    )
+)
+
+st.write(
+    "OUTPUT ANN:",
+    os.path.getsize(
+        "correct_models/OUTPUT POWER_ANN.pth"
+    )
+)
+
+st.write(
+    "SFC ANN:",
+    os.path.getsize(
+        "correct_models/SFC_ANN.pth"
+    )
+)
+
 # st.markdown("""
 #     <style>
 
@@ -1584,25 +1607,12 @@ elif section == "Model Training and Evaluation":
 
         model.load_state_dict(
 
-            st.write(
-               "Exists:",
-                os.path.exists(
-                      f"correct_models/{selected_target}_ANN.pth"
-              )
-             )
-
-             st.write(
-                  "Size:",
-                   os.path.getsize(
-                    f"correct_models/{selected_target}_ANN.pth"
-              )
-            )
-
             torch.load(
 
                 f"correct_models/{selected_target}_ANN.pth",
 
-                map_location=torch.device("cpu")
+                map_location=torch.device("cpu"),
+                weights_only=False
             )
         )
 
