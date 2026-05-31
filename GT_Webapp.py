@@ -2182,23 +2182,23 @@ elif section == "New Prediction":
                 f"{predictions['EXHAUST TEMPERATURE']['prediction']:.2f} ± {predictions['EXHAUST TEMPERATURE']['rmse']:.2f}"
             )
 
-            st.subheader("Future Forecast Using User Input")
+            # st.subheader("Future Forecast Using User Input")
 
-            # ==========================================
-            # LOAD HISTORICAL DATA
-            # ==========================================
+            # # ==========================================
+            # # LOAD HISTORICAL DATA
+            # # ==========================================
 
-            y_test_power = pickle.load(
-                open("correct_models/y_test_power.pkl", "rb")
-            )
+            # y_test_power = pickle.load(
+            #     open("correct_models/y_test_power.pkl", "rb")
+            # )
 
-            y_test_sfc = pickle.load(
-                open("correct_models/y_test_sfc.pkl", "rb")
-            )
+            # y_test_sfc = pickle.load(
+            #     open("correct_models/y_test_sfc.pkl", "rb")
+            # )
 
-            y_test_eff = pickle.load(
-                open("correct_models/y_test_eff.pkl", "rb")
-            )
+            # y_test_eff = pickle.load(
+            #     open("correct_models/y_test_eff.pkl", "rb")
+            # )
     
     
     # # ==========================================
