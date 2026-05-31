@@ -2143,8 +2143,7 @@ elif section == "New Prediction":
 
                     torch.load(
                         f"correct_models/{target}_ANN.pth",
-                        map_location=torch.device("cpu"),
-                        weights_only=True
+                        map_location=torch.device("cpu")
                     )
 
                 )
