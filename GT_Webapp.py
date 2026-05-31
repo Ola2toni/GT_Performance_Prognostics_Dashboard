@@ -2118,7 +2118,7 @@ elif section == "New Prediction":
                 model.load_state_dict(
 
                     torch.load(
-                        f"saved_models/{target}_ANN.pth",
+                        f"correct_models/{target}_ANN.pth",
                         map_location=torch.device("cpu")
                     )
 
