@@ -1584,8 +1584,6 @@ elif section == "Model Training and Evaluation":
 
         model.load_state_dict(
 
-            import os
-
             st.write(
                "Exists:",
                 os.path.exists(
