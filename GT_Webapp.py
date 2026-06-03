@@ -212,8 +212,9 @@ st.markdown(
         height: 100%;
 
         margin-top: 10%;
+        font-weight: bold;
 
-        color: #4FC3F7 !important;
+        color: #fff !important;
 
     }
 
@@ -235,7 +236,7 @@ st.markdown(
         font-weight: 500;
         margin-top: 0%;
 
-        color: black;
+        color: #fff !important;
 
     }
 
@@ -628,6 +629,13 @@ df = load_data()
 if section == "Home":
     #st.title("GT PERFORMANCE PROGNOSTICS DASHBOARD")
     st.markdown("""
+
+    <style>
+        .stApp {
+            background: radial-gradient(rgba(200, 201, 201, 0.1), rgba(200, 201, 201, 0.35)),url("https://res.cloudinary.com/dubfuedwb/image/upload/v1780478478/64413185147_scxuvx.jpg") center center/cover no-repeat fixed !important;
+        }
+        </style>
+        
     <h1 class="home-title">
         GT PERFORMANCE PROGNOSTICS DASHBOARD
     </h1>
@@ -2379,6 +2387,18 @@ elif section == "New Prediction":
     #     st.pyplot(fig)        # )
         
 if section == "About the Project":
+
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            width: 100%;
+            background: radial-gradient(rgba(200, 201, 201, 0.1), rgba(200, 201, 201, 0.35)),url("https://res.cloudinary.com/dubfuedwb/image/upload/v1780478478/64413185147_scxuvx.jpg") center center/cover no-repeat fixed !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     
     st.html("""
 
@@ -2398,7 +2418,7 @@ if section == "About the Project":
         <h1 style='
             font-size:55px;
             margin-bottom:30px;
-            color: #4FC3F7 !important;
+            color: #fff !important;
         '>
 
             About the Project
@@ -2409,7 +2429,7 @@ if section == "About the Project":
             font-size:22px;
             line-height:1.8;
             max-width:1000px;
-            color:#333333;
+            color: #fff !important;
             margin-top: 0px;
         '>
 
@@ -2422,13 +2442,14 @@ if section == "About the Project":
             
             <p style='
                 font-size:15px !important;
-                margin-top:20px;'>
+                margin-top:20px;
+                color: #fff !important'>
                 Designed and Developed by: Olawuyi David Oluwatoni</p>
 
         <p style='
             font-size:15px !important;
             margin-top:30px;
-            color:#111111;
+            color: #fff !important;
             position: relative;
             bottom: -100px;
         '>
