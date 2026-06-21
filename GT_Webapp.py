@@ -2190,7 +2190,45 @@ elif section == "New Prediction":
                 f"{predictions['EXHAUST TEMPERATURE']['prediction']:.2f} ± {predictions['EXHAUST TEMPERATURE']['rmse']:.2f}"
             )
 
-            # st.subheader("Future Forecast Using User Input")
+
+        # ==========================================
+        # PERFORMANCE ASSESSMENT
+        # ==========================================
+        
+        st.subheader("Gas Turbine Performance Assessment")
+        
+        power = predictions["OUTPUT POWER"]["prediction"]
+        fuel_flow = predictions["SFC"]["prediction"]
+        exhaust_temp = predictions["EXHAUST TEMPERATURE"]["prediction"]
+        
+        # Exhaust Temperature Assessment
+        if exhaust_temp >= 627:
+            temp_status = "🔴 TRIP CONDITION"
+        elif exhaust_temp >= 610:
+            temp_status = "🟡 ALARM CONDITION"
+        else:
+            temp_status = "🟢 NORMAL"
+        
+        # Power Output Assessment
+        rated_power = 126.1
+        
+        power_ratio = (power / rated_power) * 100
+        
+        if power_ratio >= 95:
+            power_status = "🟢 HIGH OUTPUT"
+        elif power_ratio >= 80:
+            power_status = "🟡 MODERATE OUTPUT"
+        else:
+            power_status = "🔴 LOW OUTPUT"
+        
+        # Simple Performance Index
+        performance_index = power / fuel_flow
+        
+        st.write(f"**Power Output Status:** {power_status}")
+        st.write(f"**Exhaust Temperature Status:** {temp_status}")
+        st.write(f"**Performance Index (Power/Fuel Flow):** {performance_index:.2f}")
+    
+                # st.subheader("Future Forecast Using User Input")
 
             # # ==========================================
             # # LOAD HISTORICAL DATA
