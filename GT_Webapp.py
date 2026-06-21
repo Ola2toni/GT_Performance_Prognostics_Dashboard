@@ -2208,13 +2208,18 @@ elif section == "New Prediction":
             temp_status = "🟡 ALARM CONDITION"
         else:
             temp_status = "🟢 NORMAL"
-        
+
+        # Gas Fuel Flow Assessment
+        if fuel_flow >= 7.5:
+            gas_flow_status = "🔴 CRITICAL_FUEL_STATUS"
+        else:
+            gas_flow_status = "🟢 NORMAL"
         # Power Output Assessment
         rated_power = 126.1
         
         power_ratio = (power / rated_power) * 100
         
-        if power_ratio >= 95:
+        if power_ratio >= 90:
             power_status = "🟢 HIGH OUTPUT"
         elif power_ratio >= 80:
             power_status = "🟡 MODERATE OUTPUT"
@@ -2223,31 +2228,35 @@ elif section == "New Prediction":
         
         # Simple Performance Index
         performance_index = power / fuel_flow
-        
-        st.write(f"**Power Output Status:** {power_status}")
-        st.write(f"**Exhaust Temperature Status:** {temp_status}")
-        st.write(f"**Performance Index (Power/Fuel Flow):** {performance_index:.2f}")
+        c1, c2, c3 = st.columns(3)
 
-        power_mean = np.mean(y_test_power)
-        fuel_mean = np.mean(y_test_sfc)
-        temp_mean = np.mean(y_test_eff)
+        with c1:
+            st.write(f"**Power Output Status:** {power_status}")
+        with c2:
+            st.write(f"**Exhaust Temperature Status:** {temp_status}")
+        with c3:
+            st.write(f"**Performance Index (Power/Fuel Flow):** {performance_index:.2f}")
+
+        # power_mean = np.mean(y_test_power)
+        # fuel_mean = np.mean(y_test_sfc)
+        # temp_mean = np.mean(y_test_eff)
         
-        st.subheader("Comparison with Historical Operation")
+        # st.subheader("Comparison with Historical Operation")
         
-        st.write(
-            f"Predicted Power Output: {power:.2f} MW "
-            f"(Historical Mean: {power_mean:.2f} MW)"
-        )
+        # st.write(
+        #     f"Predicted Power Output: {power:.2f} MW "
+        #     f"(Historical Mean: {power_mean:.2f} MW)"
+        # )
         
-        st.write(
-            f"Predicted Fuel Flow: {fuel_flow:.2f} "
-            f"(Historical Mean: {fuel_mean:.2f})"
-        )
+        # st.write(
+        #     f"Predicted Fuel Flow: {fuel_flow:.2f} "
+        #     f"(Historical Mean: {fuel_mean:.2f})"
+        # )
         
-        st.write(
-            f"Predicted Exhaust Temperature: {exhaust_temp:.2f} °C "
-            f"(Historical Mean: {temp_mean:.2f} °C)"
-        )
+        # st.write(
+        #     f"Predicted Exhaust Temperature: {exhaust_temp:.2f} °C "
+        #     f"(Historical Mean: {temp_mean:.2f} °C)"
+        # )
     
                 # st.subheader("Future Forecast Using User Input")
 
