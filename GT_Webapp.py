@@ -2227,6 +2227,27 @@ elif section == "New Prediction":
         st.write(f"**Power Output Status:** {power_status}")
         st.write(f"**Exhaust Temperature Status:** {temp_status}")
         st.write(f"**Performance Index (Power/Fuel Flow):** {performance_index:.2f}")
+
+        power_mean = np.mean(y_test_power)
+        fuel_mean = np.mean(y_test_sfc)
+        temp_mean = np.mean(y_test_eff)
+        
+        st.subheader("Comparison with Historical Operation")
+        
+        st.write(
+            f"Predicted Power Output: {power:.2f} MW "
+            f"(Historical Mean: {power_mean:.2f} MW)"
+        )
+        
+        st.write(
+            f"Predicted Fuel Flow: {fuel_flow:.2f} "
+            f"(Historical Mean: {fuel_mean:.2f})"
+        )
+        
+        st.write(
+            f"Predicted Exhaust Temperature: {exhaust_temp:.2f} °C "
+            f"(Historical Mean: {temp_mean:.2f} °C)"
+        )
     
                 # st.subheader("Future Forecast Using User Input")
 
