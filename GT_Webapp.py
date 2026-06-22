@@ -703,6 +703,9 @@ elif section == "Dataset Overview":
         st.subheader("First 5 Rows")
         st.dataframe(df.head())
 
+        st.subheader("Dataset Description")
+        st.dataframe(df.describe())
+
         st.subheader("Dataset Info")
 
         # Capture df.info() output
