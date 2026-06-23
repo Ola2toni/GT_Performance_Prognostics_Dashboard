@@ -795,6 +795,7 @@ elif section == "Data Preprocessing and Visualization":
         st.subheader("Feature Distributions")
 
         for col in [selected_feature]:
+            sns.set_style("darkgrid")
             
             fig, ax = plt.subplots(figsize=(10, 5))
             
