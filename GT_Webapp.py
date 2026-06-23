@@ -795,8 +795,9 @@ elif section == "Data Preprocessing and Visualization":
         st.subheader("Feature Distributions")
 
         for col in [selected_feature]:
-            sns.set_style("dark_grid")
+            
             fig, ax = plt.subplots(figsize=(10, 5))
+            sns.set_style("dark_grid")
 
             sns.histplot(df[col], kde=True, ax=ax)
 
