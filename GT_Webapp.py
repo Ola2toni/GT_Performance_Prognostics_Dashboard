@@ -857,22 +857,6 @@ elif section == "Data Preprocessing and Visualization":
         st.success("IQR Outlier Reduction Applied")
 
         # ==========================================
-        # BOXPLOTS AFTER OUTLIER REMOVAL
-        # ==========================================
-
-        st.subheader("Boxplots After Outlier Reduction")
-
-        for col in [selected_feature]:
-
-            fig, ax = plt.subplots(figsize=(6, 4))
-
-            sns.boxplot(x=df[col], ax=ax)
-
-            ax.set_title(f"Cleaned Boxplot of {col}")
-
-            st.pyplot(fig)
-
-        # ==========================================
         # SAVITZKY-GOLAY SMOOTHING
         # ==========================================
 
@@ -916,6 +900,22 @@ elif section == "Data Preprocessing and Visualization":
         st.write("Original Shape:", df_scaled.shape)
 
         st.write("Reduced Shape:", X_pca.shape)
+
+        # ==========================================
+        # BOXPLOTS AFTER OUTLIER REMOVAL
+        # ==========================================
+
+        st.subheader("Boxplots After Outlier Reduction")
+
+        for col in [selected_feature]:
+
+            fig, ax = plt.subplots(figsize=(6, 4))
+
+            sns.boxplot(x=df[col], ax=ax)
+
+            ax.set_title(f"Cleaned Boxplot of {col}")
+
+            st.pyplot(fig)
 
         # ==========================================
         # FINAL DATASET
