@@ -866,7 +866,7 @@ elif section == "Data Preprocessing and Visualization":
 
             fig, ax = plt.subplots(figsize=(6, 4))
 
-            sns.boxplot(x=df_scaled[col], ax=ax)
+            sns.boxplot(x=df[col], ax=ax)
 
             ax.set_title(f"Cleaned Boxplot of {col}")
 
