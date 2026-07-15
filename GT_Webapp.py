@@ -388,6 +388,21 @@ st.markdown(
         color: black !important;
     }
 
+
+    /* Sidebar close (X) button */
+    section[data-testid="stSidebar"] button {
+        color: white !important;
+        background: transparent !important;
+        border: none !important;
+    }
+    
+    section[data-testid="stSidebar"] button:hover {
+        background-color: #333 !important;
+        color: white !important;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
     </style>
     """,
     unsafe_allow_html=True
