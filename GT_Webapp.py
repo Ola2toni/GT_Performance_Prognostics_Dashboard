@@ -183,7 +183,7 @@ st.markdown(
     }
     
     /* Change arrow color on hover */
-    button[data-testid="stBaseButton-headerNoPadding"]:hover
+    button[data-testid="stBaseButton-headerNoPadding"]
     [data-testid="stIconMaterial"]{
         color:black !important;
         -webkit-text-fill-color:black !important;
