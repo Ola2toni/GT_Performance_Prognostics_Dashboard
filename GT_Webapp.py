@@ -159,6 +159,11 @@ st.markdown(
 
     }
 
+    [data-testid="collapsedControl"] svg {
+    fill: white !important;
+    stroke: white !important;
+}
+
     /* ==========================================
     HEADER BACKGROUND
     ========================================== */
