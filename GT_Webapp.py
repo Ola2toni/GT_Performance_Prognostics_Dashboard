@@ -328,7 +328,7 @@ st.markdown(
     ========================================== */
 
     input {
-        background-color: white !important;
+        background-color: black !important;
         color: black !important;
     }
 
