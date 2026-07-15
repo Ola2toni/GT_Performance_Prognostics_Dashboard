@@ -270,16 +270,18 @@ st.markdown(
 
     }
 
-    /* Sidebar toggle button */
+    /* Sidebar toggle button background */
     [data-testid="collapsedControl"] {
-        color: white !important;
+        background-color: #000000 !important;
+        border-radius: 8px !important;
+        padding: 6px !important;
     }
     
-    [data-testid="collapsedControl"] svg {
-        color: white !important;
-        fill: white !important;
-        stroke: white !important;
+    /* Hover */
+    [data-testid="collapsedControl"]:hover {
+        background-color: #222222 !important;
     }
+
 
     /* ==========================================
        SELECTBOX STYLING
