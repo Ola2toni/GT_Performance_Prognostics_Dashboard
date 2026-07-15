@@ -1,5 +1,5 @@
 import streamlit as st
-st.write(st.__version__)
+# st.write(st.__version__)
 
 st.set_page_config(
     page_title="GTPPD-2.0",
@@ -150,7 +150,7 @@ st.markdown(
 
         visibility: visible !important;
 
-        background-color: black !important;
+        background-color: white !important;
 
         color: white !important;
 
@@ -159,11 +159,6 @@ st.markdown(
         padding: 6px;
 
     }
-
-    [data-testid="collapsedControl"] svg {
-    fill: white !important;
-    stroke: white !important;
-}
 
     /* ==========================================
     HEADER BACKGROUND
