@@ -284,7 +284,7 @@ st.markdown(
 
     [data-testid="collapsedControl"] {
 
-        color: black !important;
+        color: white !important;
 
     }
 
@@ -292,12 +292,12 @@ st.markdown(
     [data-testid="collapsedControl"] {
         background-color: #000000 !important;
         border-radius: 8px !important;
-        padding: 6px !important;
+        padding: 0px !important;
     }
     
     /* Hover */
     [data-testid="collapsedControl"]:hover {
-        background-color: #222222 !important;
+        background-color: #ffffff !important;
     }
 
 
@@ -369,8 +369,8 @@ st.markdown(
     /* Search box inside Streamlit selectboxes */
     div[data-baseweb="select"] input {
         color: white !important;
-        -webkit-text-fill-color: black !important;
-        caret-color: black !important;
+        -webkit-text-fill-color: white !important;
+        caret-color: white !important;
     }
     
     /* Placeholder text */
