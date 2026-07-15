@@ -327,9 +327,25 @@ st.markdown(
     INPUT BOXES
     ========================================== */
 
+    /* ==========================================
+    INPUT BOXES
+    ========================================== */
+    
     input {
         background-color: white !important;
-        color: white !important;
+        color: black !important;
+    }
+    
+    /* Search box inside Streamlit selectboxes */
+    div[data-baseweb="select"] input {
+        color: black !important;
+        -webkit-text-fill-color: black !important;
+        caret-color: black !important;
+    }
+    
+    /* Placeholder text */
+    div[data-baseweb="select"] input::placeholder {
+        color: gray !important;
     }
 
     /* ==========================================
@@ -337,7 +353,7 @@ st.markdown(
     ========================================== */
 
     div[data-baseweb="tag"] {
-        background-color: #333333 !important;
+        background-color: black !important;
         color: white !important;
     }
 
@@ -347,7 +363,7 @@ st.markdown(
 
     .stSlider label {
         color: black !important;
-        background-color: white;
+        background-color: white !important;
     }
 
     /* ==========================================
