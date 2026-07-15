@@ -188,7 +188,7 @@ st.markdown(
 
     button[kind="header"] {
 
-        background-color: black !important;
+        background-color: white !important;
 
         color: white !important;
 
