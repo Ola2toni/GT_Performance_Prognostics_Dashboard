@@ -347,7 +347,7 @@ st.markdown(
 
     .stSlider label {
         color: black !important;
-        background-color: black !important;
+        background-color: white !important;
     }
 
     /* ==========================================
