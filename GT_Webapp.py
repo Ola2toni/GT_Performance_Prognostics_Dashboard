@@ -166,15 +166,6 @@ st.markdown(
         transition: all 0.25s ease;
     }
     
-    /* White box on hover */
-    [data-testid="collapsedControl"]:hover {
-        background: white !important;
-    }
-    
-    /* Change the icon on hover */
-    [data-testid="collapsedControl"]:hover [data-testid="stIconMaterial"] {
-        color: black !important;
-    }
 
     /* ==========================================
     HEADER BACKGROUND
@@ -183,8 +174,9 @@ st.markdown(
     header[data-testid="stHeader"] {
 
         background-color: white !important;
-        position: relative !important;
-        z-index: 999999 !important;
+        position: Absolute !important;
+        top: 0
+        z-index: 999999 !important
 
     }
 
@@ -292,7 +284,7 @@ st.markdown(
     [data-testid="collapsedControl"] {
         background-color: #000000 !important;
         border-radius: 8px !important;
-        padding: 0px !important;
+        padding: 6px !important;
     }
     
     /* Hover */
@@ -366,17 +358,17 @@ st.markdown(
         color: white !important;
     }
     
-    /* Search box inside Streamlit selectboxes */
-    div[data-baseweb="select"] input {
-        color: white !important;
-        -webkit-text-fill-color: white !important;
-        caret-color: white !important;
-    }
+    # /* Search box inside Streamlit selectboxes */
+    # div[data-baseweb="select"] input {
+    #     color: white !important;
+    #     -webkit-text-fill-color: white !important;
+    #     caret-color: white !important;
+    # }
     
-    /* Placeholder text */
-    div[data-baseweb="select"] input::placeholder {
-        color: gray !important;
-    }
+    # /* Placeholder text */
+    # div[data-baseweb="select"] input::placeholder {
+    #     color: gray !important;
+    # }
 
     /* ==========================================
     MULTISELECT
