@@ -363,7 +363,7 @@ st.markdown(
     
     input {
         background-color: white !important;
-        color: black !important;
+        color: white !important;
     }
     
     /* Search box inside Streamlit selectboxes */
