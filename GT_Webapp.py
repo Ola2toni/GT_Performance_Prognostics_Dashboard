@@ -165,7 +165,29 @@ st.markdown(
         border-radius: 8px !important;
         transition: all 0.25s ease;
     }
+
+    /* ==========================================
+    STREAMLIT SIDEBAR TOGGLE BUTTON
+    ========================================== */
     
+    /* Toggle button */
+    button[data-testid="stBaseButton-headerNoPadding"]{
+        border-radius:8px !important;
+        transition:all 0.2s ease !important;
+    }
+    
+    /* White hover box */
+    button[data-testid="stBaseButton-headerNoPadding"]:hover{
+        background-color:white !important;
+    }
+    
+    /* Change arrow color on hover */
+    button[data-testid="stBaseButton-headerNoPadding"]:hover
+    [data-testid="stIconMaterial"]{
+        color:black !important;
+        -webkit-text-fill-color:black !important;
+    }
+        
 
     /* ==========================================
     HEADER BACKGROUND
