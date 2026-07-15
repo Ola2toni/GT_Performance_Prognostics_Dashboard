@@ -53,7 +53,7 @@ import pickle
 # st.set_page_config(
 #     page_title="GTPPD-2.0",
 #     layout="wide",
-#     initial_sidebar_state="expanded"
+#     initial_sidebar_state="collapsed"
 # )
 
 # ==========================================
@@ -282,7 +282,7 @@ st.markdown(
 
     /* Sidebar toggle button background */
     [data-testid="collapsedControl"] {
-        background-color: #000000 !important;
+        background-color: #ffffff !important;
         border-radius: 8px !important;
         padding: 6px !important;
     }
@@ -358,17 +358,17 @@ st.markdown(
         color: white !important;
     }
     
-    # /* Search box inside Streamlit selectboxes */
-    # div[data-baseweb="select"] input {
-    #     color: white !important;
-    #     -webkit-text-fill-color: white !important;
-    #     caret-color: white !important;
-    # }
+    /* Search box inside Streamlit selectboxes */
+    div[data-baseweb="select"] input {
+        color: white !important;
+        -webkit-text-fill-color: white !important;
+        caret-color: white !important;
+    }
     
-    # /* Placeholder text */
-    # div[data-baseweb="select"] input::placeholder {
-    #     color: gray !important;
-    # }
+    /* Placeholder text */
+    div[data-baseweb="select"] input::placeholder {
+        color: gray !important;
+    }
 
     /* ==========================================
     MULTISELECT
