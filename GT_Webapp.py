@@ -161,12 +161,12 @@ st.markdown(
     }
 
     /* Button inside collapsed control */
-    [data-testid="collapsedControl"] button {
+    [data-testid="collapsedControl"] {
         border-radius: 10px !important;
         transition: all 0.25s ease;
     }
     
-    [data-testid="collapsedControl"] button:hover {
+    [data-testid="collapsedControl"]:hover {
         background: white !important;
         box-shadow: 0 0 8px rgba(255,255,255,0.6);
     }
