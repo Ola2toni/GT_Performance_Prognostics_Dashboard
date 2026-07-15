@@ -160,15 +160,20 @@ st.markdown(
 
     }
 
-    /* Button inside collapsed control */
+    /* Toggle button */
     [data-testid="collapsedControl"] {
-        border-radius: 10px !important;
+        border-radius: 8px !important;
         transition: all 0.25s ease;
     }
     
+    /* White box on hover */
     [data-testid="collapsedControl"]:hover {
         background: white !important;
-        box-shadow: 0 0 8px rgba(255,255,255,0.6);
+    }
+    
+    /* Change the icon on hover */
+    [data-testid="collapsedControl"]:hover [data-testid="stIconMaterial"] {
+        color: black !important;
     }
 
     /* ==========================================
