@@ -124,12 +124,13 @@ st.markdown(
     /* ==========================================
        SIDEBAR TEXT COLOR
     ========================================== */
-
-    section[data-testid="stSidebar"] * {
+    section[data-testid="stSidebar"] {
+        color: white !important;
+    }
+    section[data-testid="stSidebar"] h2 {
         color: white !important;
         text-align: center;
     }
-
     /* ==========================================
        HIDE DEPLOY BUTTON
     ========================================== */
@@ -323,9 +324,6 @@ st.markdown(
         color: white !important;
     }
 
-    /* ==========================================
-    INPUT BOXES
-    ========================================== */
 
     /* ==========================================
     INPUT BOXES
