@@ -167,6 +167,9 @@ st.markdown(
     header[data-testid="stHeader"] {
 
         background-color: white !important;
+        position: relative !important;
+        z-index: 999999 !important;
+        background-color: black !important;
 
     }
 
