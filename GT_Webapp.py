@@ -355,14 +355,14 @@ st.markdown(
     
     input {
         background-color: white !important;
-        color: white !important;
+        color: black !important;
     }
     
     /* Search box inside Streamlit selectboxes */
     div[data-baseweb="select"] input {
         color: black !important;
-        -webkit-text-fill-color: white !important;
-        caret-color: white !important;
+        -webkit-text-fill-color: black !important;
+        caret-color: black !important;
     }
     
     /* Placeholder text */
