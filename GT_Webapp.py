@@ -266,7 +266,7 @@ st.markdown(
 
     [data-testid="collapsedControl"] {
 
-        color: black !important;
+        color: white !important;
 
     }
 
