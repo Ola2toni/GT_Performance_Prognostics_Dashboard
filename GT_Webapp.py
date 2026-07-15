@@ -177,7 +177,7 @@ st.markdown(
     }
     
     /* White hover box */
-    button[data-testid="stBaseButton-headerNoPadding"]:hover{
+    button[data-testid="stBaseButton-headerNoPadding"]{
         background-color:white !important;
     }
     
