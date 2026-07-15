@@ -186,15 +186,15 @@ st.markdown(
     HAMBURGER MENU COLOR
     ========================================== */
 
-    # button[kind="header"] {
+    button[kind="header"] {
 
-    #     background-color: white !important;
+        background-color: white !important;
 
-    #     color: white !important;
+        color: white !important;
 
-    #     border-radius: 8px;
+        border-radius: 8px;
 
-    # }
+    }
 
     /* ==========================================
     CENTER ALL HEADERS
@@ -264,11 +264,11 @@ st.markdown(
     SIDEBAR TOGGLE BUTTON
     ========================================== */
 
-    # [data-testid="collapsedControl"] {
+    [data-testid="collapsedControl"] {
 
-    #     color: white !important;
+        color: white !important;
 
-    # }
+    }
 
     /* Sidebar toggle button */
     [data-testid="collapsedControl"] {
