@@ -284,7 +284,7 @@ st.markdown(
 
     [data-testid="collapsedControl"] {
 
-        color: white !important;
+        color: black !important;
 
     }
 
@@ -363,7 +363,7 @@ st.markdown(
     
     input {
         background-color: white !important;
-        color: black !important;
+        # color: black !important;
     }
     
     /* Search box inside Streamlit selectboxes */
