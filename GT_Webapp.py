@@ -1,4 +1,5 @@
 import streamlit as st
+st.write(st.__version__)
 
 st.set_page_config(
     page_title="GTPPD-2.0",
