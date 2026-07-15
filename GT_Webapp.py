@@ -360,7 +360,7 @@ st.markdown(
     
     /* Search box inside Streamlit selectboxes */
     div[data-baseweb="select"] input {
-        color: white !important;
+        color: black !important;
         -webkit-text-fill-color: white !important;
         caret-color: white !important;
     }
@@ -376,7 +376,7 @@ st.markdown(
 
     div[data-baseweb="tag"] {
         background-color: black !important;
-        color: white !important;
+        color: black !important;
     }
 
     /* ==========================================
