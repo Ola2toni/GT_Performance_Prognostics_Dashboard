@@ -174,6 +174,7 @@ st.markdown(
     button[data-testid="stBaseButton-headerNoPadding"]{
         border-radius:8px !important;
         transition:all 0.2s ease !important;
+        color:black !important;
     }
     
     /* White hover box */
