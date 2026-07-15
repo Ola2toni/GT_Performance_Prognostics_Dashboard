@@ -329,7 +329,7 @@ st.markdown(
 
     input {
         background-color: black !important;
-        color: black !important;
+        color: white !important;
     }
 
     /* ==========================================
@@ -347,6 +347,7 @@ st.markdown(
 
     .stSlider label {
         color: black !important;
+        background-color: black !important;
     }
 
     /* ==========================================
