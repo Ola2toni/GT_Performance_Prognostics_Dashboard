@@ -179,14 +179,14 @@ st.markdown(
     
     /* White hover box */
     button[data-testid="stBaseButton-headerNoPadding"]{
-        background-color:white !important;
+        background-color:black !important;
     }
     
     /* Change arrow color on hover */
     button[data-testid="stBaseButton-headerNoPadding"]
     [data-testid="stIconMaterial"]{
-        color:black !important;
-        -webkit-text-fill-color:black !important;
+        color:white !important;
+        -webkit-text-fill-color:white !important;
     }
         
 
